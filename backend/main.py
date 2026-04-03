@@ -65,3 +65,6 @@ def delete_entry(id: int):
     db.commit()
     db.close()
     return {"status": "deleted"}
+    @app.get("/")
+def home():
+    return {"message": "Backend running successfully"}
